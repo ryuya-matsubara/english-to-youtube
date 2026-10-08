@@ -1,0 +1,19 @@
+{
+  "name": "English Before YouTube",
+  "short_name": "English",
+  "description": "YouTubeやInstagramを開く前に、英語を1問練習するアプリ",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "./icon.jpeg",
+      "sizes": "940x940",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
