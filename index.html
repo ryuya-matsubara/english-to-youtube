@@ -3,109 +3,49 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#f7f8fc">
-  <meta name="description" content="YouTubeを開く前に、日常・ビジネス・旅行の100フレーズで英語を1問トレーニング。">
-  <title>English Before YouTube | 1問だけ英作文</title>
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="YouTubeの前に、英語を1問。">
+  <title>English Before YouTube</title>
   <style>
-    :root{color-scheme:light;--ink:#182235;--muted:#677388;--indigo:#3e50cf;--indigo-deep:#293ba5;--stroke:#e5e9f2;--surface:#fff;--bg:#f7f8fc}
-    *{box-sizing:border-box}
-    html{min-height:100%;-webkit-text-size-adjust:100%}
-    body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP","Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(ellipse 75% 35% at 50% 0%,#e8eaff 0%,transparent 100%),var(--bg)}
-    button,a{-webkit-tap-highlight-color:transparent}
-    button{font:inherit;cursor:pointer}
-    button:focus-visible,a:focus-visible{outline:3px solid #93a1ff;outline-offset:3px}
-    .shell{max-width:560px;margin:0 auto;padding:calc(28px + env(safe-area-inset-top)) 20px calc(36px + env(safe-area-inset-bottom))}
-    .brand{display:flex;align-items:center;gap:12px}
-    .mark{display:grid;place-items:center;width:44px;height:44px;border-radius:15px;background:#e6e8ff;color:var(--indigo);font-size:23px;font-weight:800}
-    .brand-title{font-size:18px;line-height:1.2;font-weight:800;letter-spacing:-.04em}
-    .brand-caption{margin:4px 0 0;color:var(--muted);font-size:12px;font-weight:600;letter-spacing:.02em}
-    .intro{margin:37px 0 22px}
-    .eyebrow{margin:0 0 9px;color:var(--indigo);font-size:12px;font-weight:800;letter-spacing:.1em}
-    h1{margin:0;font-size:clamp(27px,7vw,36px);line-height:1.35;letter-spacing:-.055em;font-weight:850}
-    .subtitle{color:var(--muted);font-size:14px;line-height:1.85;margin:11px 0 0}
-    .filters{display:flex;gap:8px;flex-wrap:wrap;margin:28px 0 16px}
-    .filter{border:1px solid var(--stroke);border-radius:999px;padding:10px 13px;font-size:12px;font-weight:700;white-space:nowrap;background:#fff;color:#566178;transition:background .15s,color .15s}
-    .filter[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
-    .card{border:1px solid #e8ebf3;background:var(--surface);border-radius:26px;box-shadow:0 15px 46px rgba(29,41,88,.065);padding:27px 24px 24px}
-    .meta{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;font-weight:750;color:var(--muted)}
-    .tag{display:inline-block;background:#f0f2ff;color:var(--indigo);padding:7px 11px;border-radius:999px;font-size:11px;font-weight:800}
-    .progress-track{width:100%;height:5px;background:#edf0f7;border-radius:999px;overflow:hidden;margin:17px 0 32px}
-    .progress-fill{height:100%;width:0%;background:#596af0;border-radius:inherit;transition:width .28s}
-    .question-label,.answer-label{color:var(--muted);letter-spacing:.08em;font-size:11px;font-weight:850;margin:0 0 16px}
-    .question{margin:0;min-height:126px;font-size:clamp(22px,5.8vw,29px);font-weight:800;line-height:1.65;letter-spacing:-.025em;overflow-wrap:anywhere}
-    .hint{display:flex;gap:8px;align-items:center;border-top:1px solid #f0f1f6;padding-top:21px;margin:19px 0 22px;font-size:12px;color:#8b94a5}
-    .hint svg{flex:none}
-    .answer{margin:0 0 20px;padding:20px;border:1px solid #e5e9ff;background:#f6f7ff;border-radius:19px;animation:fadeIn .2s ease-out}
-    .english{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:clamp(22px,5.3vw,28px);font-weight:800;letter-spacing:-.025em;line-height:1.4;overflow-wrap:anywhere;margin:0 0 14px}
-    .ipa{font-family:"Charis SIL","Arial Unicode MS",system-ui,sans-serif;font-size:15px;color:#54618e;line-height:1.75;overflow-wrap:anywhere;margin:0}
-    .dialect{font-size:11px;color:#8690a8;margin:7px 0 0}
-    .play{display:inline-flex;align-items:center;gap:8px;margin-top:16px;border:1px solid #d9dff8;background:white;border-radius:999px;padding:10px 13px;color:var(--indigo-deep);font-size:12px;font-weight:800}
-    .primary,.secondary,.youtube{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;min-height:58px;border-radius:17px;border:0;text-decoration:none;font-size:15px;font-weight:800}
-    .primary{background:var(--indigo);color:#fff;box-shadow:0 8px 18px rgba(62,80,207,.19)}
-    .primary:active{background:var(--indigo-deep)}
-    .secondary{background:#eff1ff;color:var(--indigo);margin-top:11px}
-    .youtube{background:#161b28;color:#fff;margin-top:11px}
-    .youtube svg{flex:none}
-    .footer{text-align:center;color:#99a1b0;font-size:12px;line-height:1.7;margin:23px 0 0}
-    .small-note{text-align:center;color:#778398;font-size:12px;margin-top:24px;line-height:1.7}
-    [hidden]{display:none!important}
-    @keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
-    @media(min-width:600px){.shell{padding-top:55px}.card{padding:32px}.question{min-height:145px}}
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", sans-serif; color:#181818; background:#fff; }
+    * { box-sizing:border-box; }
+    html,body { margin:0; min-height:100%; -webkit-text-size-adjust:100%; }
+    button,a { font:inherit; -webkit-tap-highlight-color:transparent; }
+    button { cursor:pointer; }
+    button:focus-visible,a:focus-visible { outline:3px solid #99aafa; outline-offset:3px; }
+    main { min-height:100vh; min-height:100svh; width:100%; display:flex; align-items:center; justify-content:center; padding:40px 24px calc(40px + env(safe-area-inset-bottom)); }
+    .content { width:min(100%, 520px); text-align:center; }
+    .question { margin:0; font-size:clamp(24px,6.5vw,35px); line-height:1.65; font-weight:700; letter-spacing:-.025em; overflow-wrap:anywhere; }
+    .answer { margin:32px 0 0; }
+    .english { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:clamp(22px,6vw,30px); font-weight:700; line-height:1.5; overflow-wrap:anywhere; }
+    .ipa { margin:13px 0 0; font-size:clamp(14px,3.7vw,17px); line-height:1.75; color:#626875; overflow-wrap:anywhere; font-family:"Charis SIL","Arial Unicode MS",system-ui,sans-serif; }
+    .actions { margin:36px auto 0; width:min(100%, 340px); }
+    .btn { width:100%; min-height:56px; display:flex; align-items:center; justify-content:center; border:0; border-radius:14px; background:#232323; color:#fff; font-size:16px; font-weight:700; text-decoration:none; }
+    .btn + .btn { margin-top:10px; }
+    .btn:active { opacity:.85; }
+    .next { background:#eeeeef; color:#1f1f1f; }
+    .youtube { background:#ff0033; color:#fff; }
+    .listen { margin:17px auto 0; border:0; background:transparent; color:#4d5c8c; font-size:14px; font-weight:600; padding:12px; }
+    [hidden] { display:none !important; }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none !important; transition:none !important; } }
   </style>
 </head>
 <body>
-  <main class="shell">
-    <header class="brand">
-      <div class="mark" aria-hidden="true">A<span style="font-size:12px;align-self:center">→</span></div>
-      <div><div class="brand-title">English Before YouTube</div><p class="brand-caption">JUST ONE SENTENCE, EVERY DAY.</p></div>
-    </header>
-
-    <section class="intro" aria-label="学習ガイド">
-      <p class="eyebrow">YOUR DAILY ENGLISH RESET</p>
-      <h1>YouTubeの前に、<br>英語を1問だけ。</h1>
-      <p class="subtitle">日本語を見て、自然な英語で言ってみよう。<br>答えを確認したら、YouTubeへ進めます。</p>
-    </section>
-
-    <nav class="filters" aria-label="出題カテゴリ">
-      <button class="filter" data-filter="all" aria-pressed="true">すべて · 100</button>
-      <button class="filter" data-filter="daily" aria-pressed="false">日常 · 40</button>
-      <button class="filter" data-filter="business" aria-pressed="false">ビジネス · 30</button>
-      <button class="filter" data-filter="travel" aria-pressed="false">旅行 · 30</button>
-    </nav>
-
-    <section class="card" aria-label="英作文クイズ">
-      <div class="meta"><span class="tag" id="category">日常</span><span id="counter">1 / 100</span></div>
-      <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress"></div></div>
-      <p class="question-label">HOW WOULD YOU SAY THIS?</p>
-      <h2 class="question" id="question" aria-live="polite"></h2>
-      <div class="hint">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 11v6M12 7h.01"/></svg>
-        <span>口に出して考えてから、答えを確認しよう。</span>
-      </div>
-
-      <section class="answer" id="answer" hidden aria-label="解答">
-        <p class="answer-label">NATURAL ENGLISH</p>
+  <main>
+    <div class="content">
+      <h1 class="question" id="question" aria-live="polite"></h1>
+      <section class="answer" id="answer" aria-label="英語の答え" hidden>
         <p class="english" id="english"></p>
         <p class="ipa" id="ipa"></p>
-        <p class="dialect">IPA · アメリカ英語（一般的な発音の目安）</p>
-        <button type="button" class="play" id="speak" aria-label="英語を読み上げる">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="m11 5-5 4H2v6h4l5 4V5ZM15 9a5 5 0 0 1 0 6M18 6a9 9 0 0 1 0 12"/></svg>
-          <span>発音を聞く</span>
-        </button>
+        <button class="listen" id="speak" type="button">▶ 発音を聞く</button>
       </section>
-
-      <button class="primary" id="reveal" type="button">答えを見る <span aria-hidden="true">→</span></button>
-      <button class="secondary" id="next" type="button" hidden>次の問題 <span aria-hidden="true">→</span></button>
-      <a class="youtube" id="youtube" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" hidden aria-label="YouTubeを新しいタブで開く">
-        <svg width="23" height="18" viewBox="0 0 24 18" aria-hidden="true"><rect x="0" y="1" width="24" height="16" rx="5" fill="#FF0033"/><path d="m10 5 6 4-6 4z" fill="#fff"/></svg>
-        YouTubeへ進む <span aria-hidden="true">↗</span>
-      </a>
-    </section>
-    <p class="small-note">1問からでも、毎日の英語習慣に。</p>
-    <footer class="footer">100 useful phrases · No account needed · Free</footer>
+      <div class="actions">
+        <button class="btn" id="reveal" type="button">答えを見る</button>
+        <button class="btn next" id="next" type="button" hidden>次の問題</button>
+        <a class="btn youtube" id="youtube" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" hidden>YouTubeへ進む ↗</a>
+      </div>
+    </div>
   </main>
-
   <script id="question-data" type="text/plain">daily|今日はちょっと疲れてる。|I'm a little worn out today.|/aɪm ə ˈlɪtəl wɔrn aʊt təˈdeɪ/
 daily|もう少し寝ていたい。|I wish I could sleep a little longer.|/aɪ wɪʃ aɪ kʊd sliːp ə ˈlɪtəl ˈlɔŋɡər/
 daily|そろそろ出かけなきゃ。|I should get going soon.|/aɪ ʃʊd ɡɛt ˈɡoʊɪŋ suːn/
@@ -209,52 +149,32 @@ travel|また会えたらうれしい。|I'd love to hang out again sometime.|/a
   <script>
     (() => {
       'use strict';
-      const questions = document.getElementById('question-data').textContent.trim()
-        .split('\n').map((line, id) => {
-          const [category, ja, en, ipa] = line.split('|');
-          return { id, category, ja, en, ipa };
-        });
-      const names = { daily: '日常', business: 'ビジネス', travel: '海外旅行' };
       const $ = id => document.getElementById(id);
-      const filters = Array.from(document.querySelectorAll('.filter'));
-      const validFilters = new Set(['all', 'daily', 'business', 'travel']);
-      let category = 'all';
-      try {
-        const saved = localStorage.getItem('english-before-youtube-category');
-        if (validFilters.has(saved)) category = saved;
-      } catch (_) { /* private browsing can block storage */ }
+      const questions = $('question-data').textContent.trim().split('\n').map(line => {
+        const [category, ja, en, ipa] = line.split('|');
+        return { category, ja, en, ipa };
+      });
+      let order = [];
+      let previous = -1;
+      let current = null;
 
-      let queue = [], current = null, position = 0, lastId = null;
-
-      function shuffled(list) {
-        const copy = list.slice();
-        for (let i = copy.length - 1; i > 0; i--) {
+      function refill() {
+        order = Array.from({ length:questions.length }, (_, i) => i);
+        for (let i = order.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
-          [copy[i], copy[j]] = [copy[j], copy[i]];
+          [order[i], order[j]] = [order[j], order[i]];
         }
-        return copy;
-      }
-      function fillQueue() {
-        const eligible = questions.filter(q => category === 'all' || q.category === category);
-        queue = shuffled(eligible.map(q => q.id));
-        if (queue.length > 1 && queue[queue.length - 1] === lastId) {
-          [queue[0], queue[queue.length - 1]] = [queue[queue.length - 1], queue[0]];
+        if (order.length > 1 && order[order.length - 1] === previous) {
+          [order[0], order[order.length - 1]] = [order[order.length - 1], order[0]];
         }
-        position = 0;
       }
-      function stopSpeech() {
-        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
-      }
+
       function nextQuestion() {
-        stopSpeech();
-        if (!queue.length) fillQueue();
-        current = questions[queue.pop()];
-        lastId = current.id;
-        position++;
-        const total = questions.filter(q => category === 'all' || q.category === category).length;
-        $('category').textContent = names[current.category];
-        $('counter').textContent = position + ' / ' + total;
-        $('progress').style.width = (position / total * 100) + '%';
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+        if (!order.length) refill();
+        const index = order.pop();
+        previous = index;
+        current = questions[index];
         $('question').textContent = current.ja;
         $('english').textContent = '';
         $('ipa').textContent = '';
@@ -263,6 +183,7 @@ travel|また会えたらうれしい。|I'd love to hang out again sometime.|/a
         $('next').hidden = true;
         $('youtube').hidden = true;
       }
+
       function reveal() {
         if (!current) return;
         $('english').textContent = current.en;
@@ -272,32 +193,21 @@ travel|また会えたらうれしい。|I'd love to hang out again sometime.|/a
         $('next').hidden = false;
         $('youtube').hidden = false;
       }
-      function changeCategory(value) {
-        category = value;
-        filters.forEach(b => { b.setAttribute('aria-pressed', String(b.dataset.filter === category)); });
-        try { localStorage.setItem('english-before-youtube-category', category); } catch (_) {}
-        lastId = null;
-        fillQueue();
-        nextQuestion();
-      }
 
       $('reveal').addEventListener('click', reveal);
       $('next').addEventListener('click', nextQuestion);
-      filters.forEach(b => b.addEventListener('click', () => changeCategory(b.dataset.filter)));
       if (!('speechSynthesis' in window)) {
         $('speak').hidden = true;
       } else {
         $('speak').addEventListener('click', () => {
           if (!current) return;
-          stopSpeech();
+          window.speechSynthesis.cancel();
           const utterance = new SpeechSynthesisUtterance(current.en);
           utterance.lang = 'en-US';
           utterance.rate = 0.88;
           window.speechSynthesis.speak(utterance);
         });
       }
-      filters.forEach(b => { b.setAttribute('aria-pressed', String(b.dataset.filter === category)); });
-      fillQueue();
       nextQuestion();
     })();
   </script>
