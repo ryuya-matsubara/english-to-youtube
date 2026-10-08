@@ -15,6 +15,7 @@
     button:focus-visible,a:focus-visible { outline:3px solid #99aafa; outline-offset:3px; }
     main { min-height:100vh; min-height:100svh; width:100%; display:flex; align-items:center; justify-content:center; padding:40px 24px calc(40px + env(safe-area-inset-bottom)); }
     .content { width:min(100%, 520px); text-align:center; }
+    .category { margin:0 0 12px; color:#8a8a8a; font-size:12px; font-weight:500; line-height:1.4; }
     .question { margin:0; font-size:clamp(24px,6.5vw,35px); line-height:1.65; font-weight:700; letter-spacing:-.025em; overflow-wrap:anywhere; }
     .answer { margin:32px 0 0; }
     .english { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:clamp(22px,6vw,30px); font-weight:700; line-height:1.5; overflow-wrap:anywhere; }
@@ -34,6 +35,7 @@
 <body>
   <main>
     <div class="content">
+      <p class="category" id="category"></p>
       <h1 class="question" id="question" aria-live="polite"></h1>
       <section class="answer" id="answer" aria-label="英語の答え" hidden>
         <p class="english" id="english"></p>
@@ -157,6 +159,7 @@ travel|また会えたらうれしい。|I'd love to hang out again sometime.|/a
         const [category, ja, en, ipa] = line.split('|');
         return { category, ja, en, ipa };
       });
+      const categoryLabels = {daily:'日常', business:'ビジネス', travel:'海外旅行'};
       let order = [];
       let previous = -1;
       let current = null;
@@ -178,6 +181,8 @@ travel|また会えたらうれしい。|I'd love to hang out again sometime.|/a
         const index = order.pop();
         previous = index;
         current = questions[index];
+        $('category').textContent = categoryLabels[current.category];
+        $('category').hidden = false;
         $('question').textContent = current.ja;
         $('english').textContent = '';
         $('ipa').textContent = '';
@@ -194,6 +199,7 @@ travel|また会えたらうれしい。|I'd love to hang out again sometime.|/a
         $('english').textContent = current.en;
         $('ipa').textContent = current.ipa;
         $('answer').hidden = false;
+        $('category').hidden = true;
         $('reveal').hidden = true;
         $('next').hidden = false;
         $('youtube').hidden = false;
