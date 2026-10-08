@@ -43,6 +43,7 @@
         <button class="btn" id="reveal" type="button">答えを見る</button>
         <button class="btn next" id="next" type="button" hidden>次の問題</button>
         <a class="btn youtube" id="youtube" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" hidden>YouTubeへ進む ↗</a>
+        <a class="btn" id="chatgpt" href="https://chatgpt.com/g/g-p-69abb8f4a40c8191a1191ad9aebabba1" target="_blank" rel="noopener noreferrer" hidden>ChatGPTに質問 ↗</a>
       </div>
     </div>
   </main>
@@ -182,6 +183,7 @@ travel|また会えたらうれしい。|I'd love to hang out again sometime.|/a
         $('reveal').hidden = false;
         $('next').hidden = true;
         $('youtube').hidden = true;
+        $('chatgpt').hidden = true;
       }
 
       function reveal() {
@@ -192,6 +194,7 @@ travel|また会えたらうれしい。|I'd love to hang out again sometime.|/a
         $('reveal').hidden = true;
         $('next').hidden = false;
         $('youtube').hidden = false;
+        $('chatgpt').hidden = false;
       }
 
       $('reveal').addEventListener('click', reveal);
