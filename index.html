@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="YouTubeを開く前に、日常・ビジネス・旅行の100フレーズで英語を1問トレーニング。">
+  <title>English Before YouTube | 1問だけ英作文</title>
+  <style>
+    :root{color-scheme:light;--ink:#182235;--muted:#677388;--indigo:#3e50cf;--indigo-deep:#293ba5;--stroke:#e5e9f2;--surface:#fff;--bg:#f7f8fc}
+    *{box-sizing:border-box}
+    html{min-height:100%;-webkit-text-size-adjust:100%}
+    body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP","Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(ellipse 75% 35% at 50% 0%,#e8eaff 0%,transparent 100%),var(--bg)}
+    button,a{-webkit-tap-highlight-color:transparent}
+    button{font:inherit;cursor:pointer}
+    button:focus-visible,a:focus-visible{outline:3px solid #93a1ff;outline-offset:3px}
+    .shell{max-width:560px;margin:0 auto;padding:calc(28px + env(safe-area-inset-top)) 20px calc(36px + env(safe-area-inset-bottom))}
+    .brand{display:flex;align-items:center;gap:12px}
+    .mark{display:grid;place-items:center;width:44px;height:44px;border-radius:15px;background:#e6e8ff;color:var(--indigo);font-size:23px;font-weight:800}
+    .brand-title{font-size:18px;line-height:1.2;font-weight:800;letter-spacing:-.04em}
+    .brand-caption{margin:4px 0 0;color:var(--muted);font-size:12px;font-weight:600;letter-spacing:.02em}
+    .intro{margin:37px 0 22px}
+    .eyebrow{margin:0 0 9px;color:var(--indigo);font-size:12px;font-weight:800;letter-spacing:.1em}
+    h1{margin:0;font-size:clamp(27px,7vw,36px);line-height:1.35;letter-spacing:-.055em;font-weight:850}
+    .subtitle{color:var(--muted);font-size:14px;line-height:1.85;margin:11px 0 0}
+    .filters{display:flex;gap:8px;flex-wrap:wrap;margin:28px 0 16px}
+    .filter{border:1px solid var(--stroke);border-radius:999px;padding:10px 13px;font-size:12px;font-weight:700;white-space:nowrap;background:#fff;color:#566178;transition:background .15s,color .15s}
+    .filter[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+    .card{border:1px solid #e8ebf3;background:var(--surface);border-radius:26px;box-shadow:0 15px 46px rgba(29,41,88,.065);padding:27px 24px 24px}
+    .meta{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;font-weight:750;color:var(--muted)}
+    .tag{display:inline-block;background:#f0f2ff;color:var(--indigo);padding:7px 11px;border-radius:999px;font-size:11px;font-weight:800}
+    .progress-track{width:100%;height:5px;background:#edf0f7;border-radius:999px;overflow:hidden;margin:17px 0 32px}
+    .progress-fill{height:100%;width:0%;background:#596af0;border-radius:inherit;transition:width .28s}
+    .question-label,.answer-label{color:var(--muted);letter-spacing:.08em;font-size:11px;font-weight:850;margin:0 0 16px}
+    .question{margin:0;min-height:126px;font-size:clamp(22px,5.8vw,29px);font-weight:800;line-height:1.65;letter-spacing:-.025em;overflow-wrap:anywhere}
+    .hint{display:flex;gap:8px;align-items:center;border-top:1px solid #f0f1f6;padding-top:21px;margin:19px 0 22px;font-size:12px;color:#8b94a5}
+    .hint svg{flex:none}
+    .answer{margin:0 0 20px;padding:20px;border:1px solid #e5e9ff;background:#f6f7ff;border-radius:19px;animation:fadeIn .2s ease-out}
+    .english{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:clamp(22px,5.3vw,28px);font-weight:800;letter-spacing:-.025em;line-height:1.4;overflow-wrap:anywhere;margin:0 0 14px}
+    .ipa{font-family:"Charis SIL","Arial Unicode MS",system-ui,sans-serif;font-size:15px;color:#54618e;line-height:1.75;overflow-wrap:anywhere;margin:0}
+    .dialect{font-size:11px;color:#8690a8;margin:7px 0 0}
+    .play{display:inline-flex;align-items:center;gap:8px;margin-top:16px;border:1px solid #d9dff8;background:white;border-radius:999px;padding:10px 13px;color:var(--indigo-deep);font-size:12px;font-weight:800}
+    .primary,.secondary,.youtube{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;min-height:58px;border-radius:17px;border:0;text-decoration:none;font-size:15px;font-weight:800}
+    .primary{background:var(--indigo);color:#fff;box-shadow:0 8px 18px rgba(62,80,207,.19)}
+    .primary:active{background:var(--indigo-deep)}
+    .secondary{background:#eff1ff;color:var(--indigo);margin-top:11px}
+    .youtube{background:#161b28;color:#fff;margin-top:11px}
+    .youtube svg{flex:none}
+    .footer{text-align:center;color:#99a1b0;font-size:12px;line-height:1.7;margin:23px 0 0}
+    .small-note{text-align:center;color:#778398;font-size:12px;margin-top:24px;line-height:1.7}
+    [hidden]{display:none!important}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+    @media(min-width:600px){.shell{padding-top:55px}.card{padding:32px}.question{min-height:145px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="brand">
+      <div class="mark" aria-hidden="true">A<span style="font-size:12px;align-self:center">→</span></div>
+      <div><div class="brand-title">English Before YouTube</div><p class="brand-caption">JUST ONE SENTENCE, EVERY DAY.</p></div>
+    </header>
+
+    <section class="intro" aria-label="学習ガイド">
+      <p class="eyebrow">YOUR DAILY ENGLISH RESET</p>
+      <h1>YouTubeの前に、<br>英語を1問だけ。</h1>
+      <p class="subtitle">日本語を見て、自然な英語で言ってみよう。<br>答えを確認したら、YouTubeへ進めます。</p>
+    </section>
+
+    <nav class="filters" aria-label="出題カテゴリ">
+      <button class="filter" data-filter="all" aria-pressed="true">すべて · 100</button>
+      <button class="filter" data-filter="daily" aria-pressed="false">日常 · 40</button>
+      <button class="filter" data-filter="business" aria-pressed="false">ビジネス · 30</button>
+      <button class="filter" data-filter="travel" aria-pressed="false">旅行 · 30</button>
+    </nav>
+
+    <section class="card" aria-label="英作文クイズ">
+      <div class="meta"><span class="tag" id="category">日常</span><span id="counter">1 / 100</span></div>
+      <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress"></div></div>
+      <p class="question-label">HOW WOULD YOU SAY THIS?</p>
+      <h2 class="question" id="question" aria-live="polite"></h2>
+      <div class="hint">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 11v6M12 7h.01"/></svg>
+        <span>口に出して考えてから、答えを確認しよう。</span>
+      </div>
+
+      <section class="answer" id="answer" hidden aria-label="解答">
+        <p class="answer-label">NATURAL ENGLISH</p>
+        <p class="english" id="english"></p>
+        <p class="ipa" id="ipa"></p>
+        <p class="dialect">IPA · アメリカ英語（一般的な発音の目安）</p>
+        <button type="button" class="play" id="speak" aria-label="英語を読み上げる">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="m11 5-5 4H2v6h4l5 4V5ZM15 9a5 5 0 0 1 0 6M18 6a9 9 0 0 1 0 12"/></svg>
+          <span>発音を聞く</span>
+        </button>
+      </section>
+
+      <button class="primary" id="reveal" type="button">答えを見る <span aria-hidden="true">→</span></button>
+      <button class="secondary" id="next" type="button" hidden>次の問題 <span aria-hidden="true">→</span></button>
+      <a class="youtube" id="youtube" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" hidden aria-label="YouTubeを新しいタブで開く">
+        <svg width="23" height="18" viewBox="0 0 24 18" aria-hidden="true"><rect x="0" y="1" width="24" height="16" rx="5" fill="#FF0033"/><path d="m10 5 6 4-6 4z" fill="#fff"/></svg>
+        YouTubeへ進む <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+    <p class="small-note">1問からでも、毎日の英語習慣に。</p>
+    <footer class="footer">100 useful phrases · No account needed · Free</footer>
+  </main>
+
+  <script id="question-data" type="text/plain">daily|今日はちょっと疲れてる。|I'm a little worn out today.|/aɪm ə ˈlɪtəl wɔrn aʊt təˈdeɪ/
+daily|もう少し寝ていたい。|I wish I could sleep a little longer.|/aɪ wɪʃ aɪ kʊd sliːp ə ˈlɪtəl ˈlɔŋɡər/
+daily|そろそろ出かけなきゃ。|I should get going soon.|/aɪ ʃʊd ɡɛt ˈɡoʊɪŋ suːn/
+daily|今日は何する予定？|What are you up to today?|/wʌt ər ju ˈʌp tu təˈdeɪ/
+daily|今向かってるところ。|I'm on my way.|/aɪm ɑn maɪ weɪ/
+daily|ちょっと遅れそう。|I'm running a bit late.|/aɪm ˈrʌnɪŋ ə bɪt leɪt/
+daily|あと5分で着くよ。|I'll be there in five minutes.|/aɪl bi ðɛr ɪn faɪv ˈmɪnɪts/
+daily|後で連絡するね。|I'll text you later.|/aɪl tɛkst ju ˈleɪtər/
+daily|今日は家でゆっくりしたい。|I just wanna take it easy at home today.|/aɪ dʒʌst ˈwɑnə teɪk ɪt ˈiːzi ət hoʊm təˈdeɪ/
+daily|それ、めっちゃいいね。|That sounds awesome.|/ðæt saʊndz ˈɔsəm/
+daily|気にしないで。|Don't worry about it.|/doʊnt ˈwɝi əˈbaʊt ɪt/
+daily|全然大丈夫。|No worries at all.|/noʊ ˈwɝiz ət ɔl/
+daily|それは知らなかった。|I had no idea.|/aɪ hæd noʊ aɪˈdiːə/
+daily|どういう意味？|What do you mean by that?|/wʌt də ju miːn baɪ ðæt/
+daily|もう一回言ってくれる？|Could you say that again?|/kʊd ju seɪ ðæt əˈɡɛn/
+daily|聞き取れなかった。|I didn't catch that.|/aɪ ˈdɪdənt kætʃ ðæt/
+daily|なんとなく分かる。|I kind of get what you mean.|/aɪ ˈkaɪnd əv ɡɛt wʌt ju miːn/
+daily|どっちでもいいよ。|Either works for me.|/ˈiðər wɝks fər mi/
+daily|それにしよう。|Let's go with that.|/lɛts ɡoʊ wɪð ðæt/
+daily|ちょっと考えさせて。|Let me think about it.|/lɛt mi θɪŋk əˈbaʊt ɪt/
+daily|今日は予定があるんだ。|I've got plans today.|/aɪv ɡɑt plænz təˈdeɪ/
+daily|また今度にしよう。|Let's do it another time.|/lɛts du ɪt əˈnʌðər taɪm/
+daily|次はぜひ誘って。|Definitely invite me next time.|/ˈdɛfənətli ɪnˈvaɪt mi nɛkst taɪm/
+daily|最近どう？|How've you been lately?|/haʊv ju bɪn ˈleɪtli/
+daily|久しぶり！|Long time no see!|/lɔŋ taɪm noʊ siː/
+daily|めっちゃ楽しかった。|I had such a good time.|/aɪ hæd sʌtʃ ə ɡʊd taɪm/
+daily|もうお腹いっぱい。|I'm stuffed.|/aɪm stʌft/
+daily|お腹すいた。|I'm starving.|/aɪm ˈstɑrvɪŋ/
+daily|何食べたい？|What are you in the mood for?|/wʌt ər ju ɪn ðə muːd fɔr/
+daily|これ、おすすめだよ。|You should definitely try this.|/ju ʃʊd ˈdɛfənətli traɪ ðɪs/
+daily|眠くて仕方ない。|I can barely keep my eyes open.|/aɪ kən ˈbɛrli kiːp maɪ aɪz ˈoʊpən/
+daily|明日は早起きしないと。|I have to get up early tomorrow.|/aɪ hæf tə ɡɛt ʌp ˈɝli təˈmɑroʊ/
+daily|最近英語を勉強してる。|I've been working on my English lately.|/aɪv bɪn ˈwɝkɪŋ ɑn maɪ ˈɪŋɡlɪʃ ˈleɪtli/
+daily|まだ英語がうまく話せない。|I'm still working on speaking English.|/aɪm stɪl ˈwɝkɪŋ ɑn ˈspiːkɪŋ ˈɪŋɡlɪʃ/
+daily|もっと自然に話せるようになりたい。|I want to sound more natural when I speak.|/aɪ wɑnt tə saʊnd mɔr ˈnætʃərəl wɛn aɪ spiːk/
+daily|最近忙しかった。|Things have been pretty hectic lately.|/θɪŋz həv bɪn ˈprɪti ˈhɛktɪk ˈleɪtli/
+daily|それ、どうなった？|How did that turn out?|/haʊ dɪd ðæt tɝn aʊt/
+daily|いい考えだと思う。|I think that's a great idea.|/aɪ θɪŋk ðæts ə ɡreɪt aɪˈdiːə/
+daily|ちょっと手伝ってくれる？|Can you give me a hand?|/kæn ju ɡɪv mi ə hænd/
+daily|先に行ってて。|Go ahead without me.|/ɡoʊ əˈhɛd wɪˈðaʊt mi/
+business|この件、少し相談できますか？|Do you have a minute to discuss this?|/du ju hæv ə ˈmɪnɪt tə dɪˈskʌs ðɪs/
+business|今日の会議の目的を確認しましょう。|Let's go over the goal for today's meeting.|/lɛts ɡoʊ ˈoʊvər ðə ɡoʊl fər təˈdeɪz ˈmiːtɪŋ/
+business|進捗を共有します。|Let me give you a quick update.|/lɛt mi ɡɪv ju ə kwɪk ˈʌpdeɪt/
+business|今のところ予定通りです。|We're on track so far.|/wɪr ɑn træk soʊ fɑr/
+business|少し遅れています。|We're running a little behind schedule.|/wɪr ˈrʌnɪŋ ə ˈlɪtəl bɪˈhaɪnd ˈskɛdʒuːl/
+business|何か懸念はありますか？|Do you have any concerns?|/du ju hæv ˈɛni kənˈsɝnz/
+business|優先順位を決めましょう。|Let's prioritize these tasks.|/lɛts praɪˈɔrəˌtaɪz ðiz tæsks/
+business|まず原因を特定しましょう。|Let's identify the root cause first.|/lɛts aɪˈdɛntəˌfaɪ ðə ruːt kɔz fɝst/
+business|再現手順を教えてください。|Could you walk me through how to reproduce the issue?|/kʊd ju wɔk mi θru haʊ tə ˌriːprəˈduːs ði ˈɪʃu/
+business|ログを確認してみます。|I'll take a look at the logs.|/aɪl teɪk ə lʊk ət ðə lɔɡz/
+business|サーバーが応答していません。|The server isn't responding.|/ðə ˈsɝvər ˈɪzənt rɪˈspɑndɪŋ/
+business|一時的な問題かもしれません。|It might be a temporary issue.|/ɪt maɪt bi ə ˈtɛmpəˌrɛri ˈɪʃu/
+business|原因はまだ調査中です。|We're still investigating the cause.|/wɪr stɪl ɪnˈvɛstəˌɡeɪtɪŋ ðə kɔz/
+business|対応が完了したら連絡します。|I'll let you know once it's resolved.|/aɪl lɛt ju noʊ wʌns ɪts rɪˈzɑlvd/
+business|この設定を変更しても大丈夫ですか？|Is it okay if I change this setting?|/ɪz ɪt oʊˈkeɪ ɪf aɪ tʃeɪndʒ ðɪs ˈsɛtɪŋ/
+business|念のためバックアップを取ります。|I'll take a backup just to be safe.|/aɪl teɪk ə ˈbækʌp dʒʌst tə bi seɪf/
+business|本番環境にはまだ反映していません。|We haven't deployed it to production yet.|/wi ˈhævənt dɪˈplɔɪd ɪt tə prəˈdʌkʃən jɛt/
+business|変更の影響範囲を確認しましょう。|Let's check the impact of this change.|/lɛts tʃɛk ði ˈɪmpækt əv ðɪs tʃeɪndʒ/
+business|作業を自動化できそうです。|I think we can automate this process.|/aɪ θɪŋk wi kən ˈɔtəˌmeɪt ðɪs ˈprɑsɛs/
+business|この方法のほうが効率的です。|This approach is more efficient.|/ðɪs əˈproʊtʃ ɪz mɔr ɪˈfɪʃənt/
+business|別の案も検討したいです。|I'd like to explore another option.|/aɪd laɪk tə ɪkˈsplɔr əˈnʌðər ˈɑpʃən/
+business|ここをもう少し詳しく説明してください。|Could you elaborate on this part?|/kʊd ju ɪˈlæbəˌreɪt ɑn ðɪs pɑrt/
+business|認識が合っているか確認したいです。|I just want to make sure we're on the same page.|/aɪ dʒʌst wɑnt tə meɪk ʃʊr wɪr ɑn ðə seɪm peɪdʒ/
+business|私の理解では、こういうことです。|Here's how I understand it.|/hɪrz haʊ aɪ ˌʌndərˈstænd ɪt/
+business|この作業は誰が担当しますか？|Who's taking the lead on this?|/huz ˈteɪkɪŋ ðə liːd ɑn ðɪs/
+business|期限はいつですか？|When's the deadline?|/wɛnz ðə ˈdɛdˌlaɪn/
+business|今週中に対応できます。|I can get it done by the end of the week.|/aɪ kən ɡɛt ɪt dʌn baɪ ði ɛnd əv ðə wiːk/
+business|その件は確認して折り返します。|Let me check and get back to you.|/lɛt mi tʃɛk ən ɡɛt bæk tə ju/
+business|会議の内容をまとめて送ります。|I'll send out a summary of the meeting.|/aɪl sɛnd aʊt ə ˈsʌməri əv ðə ˈmiːtɪŋ/
+business|ご協力ありがとうございます。|Thanks for your help with this.|/θæŋks fər jʊr hɛlp wɪð ðɪs/
+travel|チェックインをお願いします。|I'd like to check in, please.|/aɪd laɪk tə tʃɛk ɪn pliːz/
+travel|この便のチェックインカウンターはどこですか？|Where's the check-in counter for this flight?|/wɛrz ðə ˈtʃɛk ɪn ˈkaʊntər fər ðɪs flaɪt/
+travel|これを預けたいです。|I'd like to check this bag.|/aɪd laɪk tə tʃɛk ðɪs bæɡ/
+travel|機内持ち込みできますか？|Can I take this as a carry-on?|/kæn aɪ teɪk ðɪs æz ə ˈkæri ɑn/
+travel|ゲートは変更されましたか？|Has the gate changed?|/hæz ðə ɡeɪt tʃeɪndʒd/
+travel|乗り継ぎ時間が短いんです。|I have a tight connection.|/aɪ hæv ə taɪt kəˈnɛkʃən/
+travel|入国審査はどこですか？|Where do I go for immigration?|/wɛr du aɪ ɡoʊ fər ˌɪməˈɡreɪʃən/
+travel|観光で来ました。|I'm here on vacation.|/aɪm hɪr ɑn veɪˈkeɪʃən/
+travel|5日間滞在します。|I'll be staying for five days.|/aɪl bi ˈsteɪɪŋ fər faɪv deɪz/
+travel|荷物が出てきません。|My bag hasn't come out yet.|/maɪ bæɡ ˈhæzənt kʌm aʊt jɛt/
+travel|この住所までお願いします。|Could you take me to this address?|/kʊd ju teɪk mi tə ðɪs əˈdrɛs/
+travel|ここまでいくらくらいかかりますか？|About how much will it cost to get there?|/əˈbaʊt haʊ mʌtʃ wɪl ɪt kɔst tə ɡɛt ðɛr/
+travel|クレジットカードは使えますか？|Do you take credit cards?|/du ju teɪk ˈkrɛdɪt kɑrdz/
+travel|おすすめの地元料理は何ですか？|What's a local dish you'd recommend?|/wʌts ə ˈloʊkəl dɪʃ jud ˌrɛkəˈmɛnd/
+travel|このあたりでおすすめの場所は？|Any places around here you'd recommend?|/ˈɛni ˈpleɪsɪz əˈraʊnd hɪr jud ˌrɛkəˈmɛnd/
+travel|メニューを見せてもらえますか？|Could I see the menu, please?|/kʊd aɪ si ðə ˈmɛnju pliːz/
+travel|これを一つください。|I'll have one of these, please.|/aɪl hæv wʌn əv ðiz pliːz/
+travel|辛さを控えめにできますか？|Could you make it less spicy?|/kʊd ju meɪk ɪt lɛs ˈspaɪsi/
+travel|お会計をお願いします。|Could we get the check, please?|/kʊd wi ɡɛt ðə tʃɛk pliːz/
+travel|別々に払えますか？|Can we split the bill?|/kæn wi splɪt ðə bɪl/
+travel|予約してあります。|I have a reservation.|/aɪ hæv ə ˌrɛzərˈveɪʃən/
+travel|荷物を預かってもらえますか？|Could you hold my luggage for me?|/kʊd ju hoʊld maɪ ˈlʌɡɪdʒ fər mi/
+travel|Wi-Fiのパスワードは何ですか？|What's the Wi-Fi password?|/wʌts ðə ˈwaɪ faɪ ˈpæsˌwɝd/
+travel|ここから歩いて行けますか？|Is it within walking distance?|/ɪz ɪt wɪˈðɪn ˈwɔkɪŋ ˈdɪstəns/
+travel|写真を撮ってもらえますか？|Could you take a picture of me?|/kʊd ju teɪk ə ˈpɪktʃər əv mi/
+travel|一緒に写真を撮りませんか？|Want to take a picture together?|/wɑnt tə teɪk ə ˈpɪktʃər təˈɡɛðər/
+travel|あなたも旅行中？|Are you traveling, too?|/ɑr ju ˈtrævəlɪŋ tuː/
+travel|どこから来たの？|Where are you from?|/wɛr ər ju frʌm/
+travel|一緒に飲みに行かない？|Wanna grab a drink together?|/ˈwɑnə ɡræb ə drɪŋk təˈɡɛðər/
+travel|また会えたらうれしい。|I'd love to hang out again sometime.|/aɪd lʌv tə hæŋ aʊt əˈɡɛn ˈsʌmˌtaɪm/</script>
+  <script>
+    (() => {
+      'use strict';
+      const questions = document.getElementById('question-data').textContent.trim()
+        .split('\n').map((line, id) => {
+          const [category, ja, en, ipa] = line.split('|');
+          return { id, category, ja, en, ipa };
+        });
+      const names = { daily: '日常', business: 'ビジネス', travel: '海外旅行' };
+      const $ = id => document.getElementById(id);
+      const filters = Array.from(document.querySelectorAll('.filter'));
+      const validFilters = new Set(['all', 'daily', 'business', 'travel']);
+      let category = 'all';
+      try {
+        const saved = localStorage.getItem('english-before-youtube-category');
+        if (validFilters.has(saved)) category = saved;
+      } catch (_) { /* private browsing can block storage */ }
+
+      let queue = [], current = null, position = 0, lastId = null;
+
+      function shuffled(list) {
+        const copy = list.slice();
+        for (let i = copy.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [copy[i], copy[j]] = [copy[j], copy[i]];
+        }
+        return copy;
+      }
+      function fillQueue() {
+        const eligible = questions.filter(q => category === 'all' || q.category === category);
+        queue = shuffled(eligible.map(q => q.id));
+        if (queue.length > 1 && queue[queue.length - 1] === lastId) {
+          [queue[0], queue[queue.length - 1]] = [queue[queue.length - 1], queue[0]];
+        }
+        position = 0;
+      }
+      function stopSpeech() {
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      }
+      function nextQuestion() {
+        stopSpeech();
+        if (!queue.length) fillQueue();
+        current = questions[queue.pop()];
+        lastId = current.id;
+        position++;
+        const total = questions.filter(q => category === 'all' || q.category === category).length;
+        $('category').textContent = names[current.category];
+        $('counter').textContent = position + ' / ' + total;
+        $('progress').style.width = (position / total * 100) + '%';
+        $('question').textContent = current.ja;
+        $('english').textContent = '';
+        $('ipa').textContent = '';
+        $('answer').hidden = true;
+        $('reveal').hidden = false;
+        $('next').hidden = true;
+        $('youtube').hidden = true;
+      }
+      function reveal() {
+        if (!current) return;
+        $('english').textContent = current.en;
+        $('ipa').textContent = current.ipa;
+        $('answer').hidden = false;
+        $('reveal').hidden = true;
+        $('next').hidden = false;
+        $('youtube').hidden = false;
+      }
+      function changeCategory(value) {
+        category = value;
+        filters.forEach(b => { b.setAttribute('aria-pressed', String(b.dataset.filter === category)); });
+        try { localStorage.setItem('english-before-youtube-category', category); } catch (_) {}
+        lastId = null;
+        fillQueue();
+        nextQuestion();
+      }
+
+      $('reveal').addEventListener('click', reveal);
+      $('next').addEventListener('click', nextQuestion);
+      filters.forEach(b => b.addEventListener('click', () => changeCategory(b.dataset.filter)));
+      if (!('speechSynthesis' in window)) {
+        $('speak').hidden = true;
+      } else {
+        $('speak').addEventListener('click', () => {
+          if (!current) return;
+          stopSpeech();
+          const utterance = new SpeechSynthesisUtterance(current.en);
+          utterance.lang = 'en-US';
+          utterance.rate = 0.88;
+          window.speechSynthesis.speak(utterance);
+        });
+      }
+      filters.forEach(b => { b.setAttribute('aria-pressed', String(b.dataset.filter === category)); });
+      fillQueue();
+      nextQuestion();
+    })();
+  </script>
+</body>
+</html>
